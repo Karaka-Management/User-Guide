@@ -86,4 +86,3 @@ e.g. Account B has the following two permissions:
 2. `R` for module `News` in the organization `Orange`
 
 In this case the account has `CR` permissions for the `News` module
-

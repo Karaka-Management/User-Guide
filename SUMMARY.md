@@ -1,25 +1,25 @@
 # Summary
-* [Introduction](README.md)
+* [Introduction]({%}&page=README)
 
 ## Setup
-* [Server](setup/server.md)
-* [WebApplication](setup/webapplication.md)
-* [SocketApplication](setup/socketapplication.md)
-* [ConsoleApplication](setup/consoleapplication.md)
+* [Server]({%}&page=setup/server)
+* [WebApplication]({%}&page=setup/webapplication)
+* [SocketApplication]({%}&page=setup/socketapplication)
+* [ConsoleApplication]({%}&page=setup/consoleapplication)
 
 ## Administration
-* [General](administration/general.md)
-* [Accounts](administration/accounts.md)
-* [Groups](administration/groups.md)
-* [Modules](administration/modules.md)
-* [Jobs](administration/jobs.md)
+* [General]({%}&page=administration/general)
+* [Accounts]({%}&page=administration/accounts)
+* [Groups]({%}&page=administration/groups)
+* [Modules]({%}&page=administration/modules)
+* [Jobs]({%}&page=administration/jobs)
 
 ## Maintenance
-* [Backup](maintenance/backup.md)
-* [Updates](maintenance/updates.md)
-* [Monitoring](maintenance/monitoring.md)
+* [Backup]({%}&page=maintenance/backup)
+* [Updates]({%}&page=maintenance/updates)
+* [Monitoring]({%}&page=maintenance/monitoring)
 
 ## Security
-* [Server](security/server.md)
-* [Application](security/application.md)
-* [Mentality](security/mentality.md)
+* [Server]({%}&page=security/server)
+* [Application]({%}&page=security/application)
+* [Mentality]({%}&page=security/mentality)

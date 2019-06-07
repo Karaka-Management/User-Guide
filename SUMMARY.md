@@ -16,7 +16,7 @@
 
 ## Maintenance
 * [Backup]({%}?page=maintenance/backup)
-* [Updates]({%}?page=maintenance/updates)
+* [Updates]({%}?page=maintenance/updates_patches)
 * [Monitoring]({%}?page=maintenance/monitoring)
 
 ## Security

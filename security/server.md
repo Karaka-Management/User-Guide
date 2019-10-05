@@ -8,7 +8,7 @@ In general only whitelist user access permissions instead of blacklisting them. 
 
 ## HTTPS
 
-HTTPS is a protocol or form of encrypted communication between client and server. It prevents attackers from reading the data beeing sent back and forth between server and client, which can be very critical when we are talking about user, company, customer, employee, private information. Nowadays it's fairly simple and cheap to setup and a must have for every website and application that is accessible through the internet browser. It is recommended to use the free service of Let's encrypt. Since https is a matter of server configuration this cannot be achived by the application itself. Follow the step-by-step instructions of https://certbot.eff.org/ in order to setup https for your own server. Normal webhosting services usually optionally offer https for a premium which you should definately consider. While you'll most likely have to pay your webhosting agency they will do the setup for you. Just remember that the actual certificate can be optained for free and while services may try to sell you more expensive certificates they are essentially the same as the free alternative.
+HTTPS is a protocol or form of encrypted communication between client and server. It prevents attackers from reading the data being sent back and forth between server and client, which can be very critical when we are talking about user, company, customer, employee, private information. Nowadays it's fairly simple and cheap to setup and a must have for every website and application that is accessible through the internet browser. It is recommended to use the free service of Let's encrypt. Since https is a matter of server configuration this cannot be achieved by the application itself. Follow the step-by-step instructions of https://certbot.eff.org/ in order to setup https for your own server. Normal webhosting services usually optionally offer https for a premium which you should definitely consider. While you'll most likely have to pay your webhosting agency they will do the setup for you. Just remember that the actual certificate can be obtained for free and while services may try to sell you more expensive certificates they are essentially the same as the free alternative.
 
 ## Root Login
 
@@ -20,11 +20,11 @@ Keep your software updated. This doesn't only apply for the operating system but
 
 ## Login
 
-Implement passwordless login. This way you don't login into your server by using a login password but by generating a specific authentication key. This can be achieved by using ssh authentication and provides another layer of security to your server. At least implement some form of password policy which requires you to change your passwords from time to time.
+Implement passwordless login via key based authentication. This way you don't login into your server by using a login password but by generating a specific authentication key. This can be achieved by using ssh authentication and provides another layer of security to your server. At least implement some form of password policy which requires you to change your passwords from time to time.
 
 ## Other
 
-There are still many more uncovered topics and tools which definately are worth reading up on.
+There are still many more uncovered topics and tools which definitely are worth reading up on.
 
 * Iptables
 * Monitoring

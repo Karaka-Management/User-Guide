@@ -43,7 +43,7 @@ Some of these modules are already provided and only need to be activated in your
 
 Depending on your use case you may have to install the following software as well:
 
-* Memchache or Redis (prefered)
+* Memchache or Redis (preferred)
 
 ## Windows
 

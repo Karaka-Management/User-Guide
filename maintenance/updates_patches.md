@@ -1,8 +1,8 @@
 # Updates & Patches
 
-Updates provide functionality improvements where patches provide security and bug fixes. It is always recommended to keep all application components up-to-date. The application either informs administrators about updates for installation or automatically installs them depending on the settings. 
+Updates provide functionality improvements where patches provide security and bug fixes. It is always recommended to keep all application components up-to-date. The application either informs administrators about updates for installation or automatically installs them depending on the settings.
 
-Updates and patches are only concerned with the application and libraries it comes with, system and application updates such as OS, database etc. have to be updated by the system administrator. It is adviced to only perform database updates once they are confirmed to work by Orange Management. 
+Updates and patches are only concerned with the application and libraries it comes with, system and application updates such as OS, database etc. have to be updated by the system administrator. It is advised to only perform database updates once they are confirmed to work by Orange Management.
 
 ## Security
 
@@ -10,7 +10,7 @@ All updates and patches as signed by the provider to make sure that they cannot 
 
 ## Automatic Updates
 
-Automatic updates can be activated in the application settings. In order use automatic updates either Cron or Windows Task Scheduler is required. Updates can be pulled in a custom defined interval thus allowing to perform updates at times with low application load to minimize user interuption.
+Automatic updates can be activated in the application settings. In order use automatic updates either Cron or Windows Task Scheduler is required. Updates can be pulled in a custom defined interval thus allowing to perform updates at times with low application load to minimize user interruption.
 
 ## Security Ratings
 

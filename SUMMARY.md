@@ -8,7 +8,6 @@
 * [ConsoleApplication]({%}?page=setup/consoleapplication)
 
 ## Administration
-* [General]({%}?page=administration/general)
 * [Accounts]({%}?page=administration/accounts)
 * [Groups]({%}?page=administration/groups)
 * [Modules]({%}?page=administration/modules)

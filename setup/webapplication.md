@@ -2,7 +2,7 @@
 
 ## Server Requirements
 
-* PHP >= 7.1
+* PHP >= 7.4
 * PDO PHP Extension
 * MySQL, PostgreSQL, MicrosoftSQL or OracleSQL
 

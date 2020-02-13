@@ -18,7 +18,7 @@ Make sure you have a database installed such as `MySQL` or `Postgresql` and the 
 
 ### Php
 
-The required php version is 7.1. Install php through your package manager, this may require you to add one additional repository to your package manager. Google for `How to install php 7.1 on XYZ`
+The required php version is 7.4. Install php through your package manager, this may require you to add one additional repository to your package manager. Google for `How to install php 7.4 on XYZ`
 
 #### Required Extensions
 

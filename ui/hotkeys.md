@@ -11,4 +11,11 @@ The following hotkeys allow you to navigate the application.
 | Global            | Ctrl + Left Arrow  | Jump to previous UI element                         |
 | Global            | Ctrl + B           | Go to previous page (back)                          |
 | Link or Tab       | Enter              | Activate/execute/follow link                        |
+
+## Form Interaction
+
+The following hotkeys provide form interactions.
+
+| Element           | Hotkey             | Action                                              |
+| ----------------- | ------------------ | --------------------------------------------------- |
 | Form              | Ctrl + S           | Submit form                                         |

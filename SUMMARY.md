@@ -1,6 +1,9 @@
 # Summary
 * [Introduction]({%}?page=README)
 
+## UI
+* [Hotkeys]({%}?page=ui/hotkeys)
+
 ## Setup
 * [Server]({%}?page=setup/server)
 * [WebApplication]({%}?page=setup/webapplication)

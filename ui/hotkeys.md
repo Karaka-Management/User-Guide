@@ -18,4 +18,13 @@ The following hotkeys provide form interactions.
 
 | Element           | Hotkey             | Action                                              |
 | ----------------- | ------------------ | --------------------------------------------------- |
-| Form              | Ctrl + S           | Submit form                                         |
+| Form              | Ctrl + Enter       | Submit form                                         |
+
+## Table Interaction
+
+The following hotkeys provide table interactions.
+
+| Element           | Hotkey             | Action                                              |
+| ----------------- | ------------------ | --------------------------------------------------- |
+| Table             | Ctrl + A           | Select all table elements                           |
+| Table             | Ctrl + E           | Export selected elements to excel                   |

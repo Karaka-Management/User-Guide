@@ -1,27 +1,27 @@
 # Summary
-* [Introduction]({%}?page=README)
+* [Introduction]({%}&page=README)
 
 ## UI
-* [Hotkeys]({%}?page=ui/hotkeys)
+* [Hotkeys]({%}&page=ui/hotkeys)
 
 ## Setup
-* [Server]({%}?page=setup/server)
-* [WebApplication]({%}?page=setup/webapplication)
-* [SocketApplication]({%}?page=setup/socketapplication)
-* [ConsoleApplication]({%}?page=setup/consoleapplication)
+* [Server]({%}&page=setup/server)
+* [WebApplication]({%}&page=setup/webapplication)
+* [SocketApplication]({%}&page=setup/socketapplication)
+* [ConsoleApplication]({%}&page=setup/consoleapplication)
 
 ## Administration
-* [Accounts]({%}?page=administration/accounts)
-* [Groups]({%}?page=administration/groups)
-* [Modules]({%}?page=administration/modules)
-* [Jobs]({%}?page=administration/jobs)
+* [Accounts]({%}&page=administration/accounts)
+* [Groups]({%}&page=administration/groups)
+* [Modules]({%}&page=administration/modules)
+* [Jobs]({%}&page=administration/jobs)
 
 ## Maintenance
-* [Backup]({%}?page=maintenance/backup)
-* [Updates]({%}?page=maintenance/updates_patches)
-* [Monitoring]({%}?page=maintenance/monitoring)
+* [Backup]({%}&page=maintenance/backup)
+* [Updates]({%}&page=maintenance/updates_patches)
+* [Monitoring]({%}&page=maintenance/monitoring)
 
 ## Security
-* [Server]({%}?page=security/server)
-* [Application]({%}?page=security/application)
-* [Mentality]({%}?page=security/mentality)
+* [Server]({%}&page=security/server)
+* [Application]({%}&page=security/application)
+* [Mentality]({%}&page=security/mentality)

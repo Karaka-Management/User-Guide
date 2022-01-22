@@ -18,7 +18,7 @@ The following hotkeys provide form interactions.
 
 | Element           | Hotkey             | Action                                              |
 | ----------------- | ------------------ | --------------------------------------------------- |
-| Form              | Ctrl + Enter       | Submit form                                         |
+| Form              | Ctrl + Enter       | Submit form (e.g. create, update, add)              |
 
 ## Table Interaction
 

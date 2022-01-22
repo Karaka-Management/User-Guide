@@ -1,22 +1,27 @@
 ## Installation
 
-The easiest and most common way to install the application is through the web installer. Alternatively you can also install it through a command line interface (cli). Generally, it is recommended to run this application on a linux computer or linux server.
+The easiest and most common way to install the application is through the web installer. Alternatively you can also install it through a command line interface (cli).
 
 ### Server Recommendations
 
-The server recommendations strongly depend on your individual needs, in the following you will find some general recommendations. 
+The server recommendations strongly depend on your individual needs, in the following you will find some general recommendations.
 
-* SSD 10GB space + space depending on how many media files you want the application to handle
-* CPU
-* RAM
+| Type            | Minimum requirements                   | Recommendations                                              |
+| :--------------- | :------------------------------------- | :----------------------------------------------------------- |
+| Storage          | SSD 1 GB +space for documents     | SSD 5 GB +space for documents                           |
+| CPU              | i5 3.2 GHz / Xeon E3 3.8 GHz (4 cores) | Xeon Silver 2.40 GHz (10 cores) min. 4 cores dedicated to the application |
+| RAM              | 4GB DDR3 3000 MHz                      | 32 GB DDR4 3200                                              |
+| Operating System | Linux or Windows         | Linux                                                        |
 
-### Webserver and Database
+> The above mentioned recommendations are for the basic application use case without additional tools and software which you maybe want to install or have already running on the server. Furthermore, the amount of concurrent users also impacts which hardware requirements are necessary (above we calculated with 50 concurrent users)
 
-If you don't have a webserver already installed please install the webserver of your choice. Webservers which are supported are apache2 and nginx. Databases which are supported are mysql/mariadb, postgres and mssql/sqlsrv.
+### Web server and Database
+
+If you don't have a web server already installed please install the web server of your choice. Web servers which are supported are apache2 and nginx. Databases which are supported are mysql/mariadb, postgres and mssql/sqlsrv.
 
 #### Windows
 
-If you are on Windows you may want to download and install the newest version of [Xampp](https://www.apachefriends.org/download.html) / [Bitnami](https://bitnami.com/stack/wamp). During the installation please make sure your install `php` and `mysql`. 
+If you are on Windows you may want to download and install the newest version of [Xampp](https://www.apachefriends.org/download.html) / [Bitnami](https://bitnami.com/stack/wamp). During the installation please make sure your install `php` and `mysql`.
 
 #### Linux
 
@@ -36,9 +41,11 @@ sudo a2enmod headers
 
 ### Php
 
+The minimum php version requirement in the following installation guide is version 8.0.
+
 ##### Windows
 
-On Windows php should already be installed with the webservers mentioned above just like the various extensions.
+On Windows php should already be installed with the web servers mentioned above just like the various extensions.
 
 ##### Linux
 
@@ -89,7 +96,7 @@ sudo phpenmod redis
 
 #### Files
 
-Before you can install the application you need to put the application files into the webserver directory. This directory depends on the webserver which you used and the webserver configuration. 
+Before you can install the application you need to put the application files into the web server directory. This directory depends on the web server which you used and the web server configuration.
 
 ##### Windows
 
@@ -103,7 +110,7 @@ By default the linux directory should be `/var/www/htm`. Remove all files in thi
 
 If you installed the application on your local computer you can open a browser window and navigate to [http://127.0.0.1/Install](http://127.0.0.1/Install). If you installed it on a remote server navigate to the URL of that server.
 
-Click yourself through the installation and fill out the forms during the installation process. 
+Click yourself through the installation and fill out the forms during the installation process.
 
 ##### Pre-installation check
 
@@ -119,7 +126,7 @@ sudo chmod -R 755 /var/www/htm/Modules
 
 ###### Php extensions
 
-If the extension is already installed you can just add it to your `php.ini` file. e.g.:
+If the extension is already installed you can just add it to your `php.ini` file of extension loading files in `conf.d/`. e.g.:
 
 ```ini
 extension=mbstring.dll // Example in case you are installing on Windows
@@ -127,6 +134,8 @@ extension=mbstring.so // Example in case you are installing on Linux
 ```
 
 > The `php.ini` file can be **often** found at C:/xampp/php/php.ini on Windows and /etc/php/8.0/apache2/php.ini on Linux.
+>
+> Sometimes the ending .dll and .so must be omitted depending on the version and configuration of your php installation.
 
 If the extension is not installed and not activated you can alternatively run the following commands on Linux (just as example):
 
@@ -135,11 +144,11 @@ sudo apt-get install php8.0-mbstring
 sudo phpenmod mbstring
 ```
 
-On windows you may follow the php [installation guide](https://www.php.net/manual/en/install.pecl.windows.php).
+On windows you may follow the php [installation guide](https://www.php.net/manual/en/install.pecl.windows.php) or the installation guide of your chosen web server which maybe already includes php.
 
 ##### Database
 
-On this page you must enter the database information which the application can use to store data. 
+On this page you must enter the database information which the application can use to store data.
 
 ###### Address
 
@@ -155,7 +164,7 @@ The port depends on the database you installed. Different database vendors use d
 
 ###### Database
 
-The recommended database name is `oms`. Please note that this database must be manually created by you. If you've not already done so during the database installation process, please create that database now. In order to create this database please check the documentation of your database vendor. On windows you might be able to log into `phpmyadmin` and create this database. 
+The recommended database name is `oms`. Please note that this database must be manually created by you. If you've not already done so during the database installation process, please create that database now. In order to create this database please check the documentation of your database vendor. On windows you might be able to log into `phpmyadmin` and create this database.
 
 ###### Users
 
@@ -179,11 +188,11 @@ Here you must define the admin login name, the admin password and email.
 
 ###### Top Level domain
 
-The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your webserver, then you input the domain name e.g. `orange-management.org`
+The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `orange-management.org`
 
 ###### Web Subdirectory
 
-The web subdirectory by default is `/`. If you installed the application in a subdirectory instead of the main directory of your webserver you input the name of the subdirectory here e.g. `/subdir/`. 
+The web subdirectory by default is `/`. If you installed the application in a subdirectory instead of the main directory of your web server you input the name of the subdirectory here e.g. `/subdir/`.
 
 ##### Install
 

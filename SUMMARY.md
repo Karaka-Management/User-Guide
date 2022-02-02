@@ -1,14 +1,9 @@
 # Summary
 * [Introduction]({%}?page=README)
 
-## UI
-* [Hotkeys]({%}?page=ui/hotkeys)
-
 ## Setup
-* [Server]({%}?page=setup/server)
-* [WebApplication]({%}?page=setup/webapplication)
-* [SocketApplication]({%}?page=setup/socketapplication)
-* [ConsoleApplication]({%}?page=setup/consoleapplication)
+* [Install]({%}?page=setup/install)
+* [First Steps]({%}?page=setup/first_steps)
 
 ## Administration
 * [Accounts]({%}?page=administration/accounts)
@@ -25,3 +20,9 @@
 * [Server]({%}?page=security/server)
 * [Application]({%}?page=security/application)
 * [Mentality]({%}?page=security/mentality)
+
+## User Interface (UI)
+
+* [Hotkeys]({%}?page=ui/hotkeys)
+* [Tables]({%}?page=ui/tables)
+* [Search]({%}?page=ui/search)

@@ -45,7 +45,7 @@ These permissions can be assigned on multiple levels (descending in the followin
 
 ### Unit/Organization
 
-`Orange Management` supports the definition of multiple units/organizations which is especially useful for organizations with subsidiaries or business units etc. For each unit/organization permissions can be assigned to accounts.
+`Karaka` supports the definition of multiple units/organizations which is especially useful for organizations with subsidiaries or business units etc. For each unit/organization permissions can be assigned to accounts.
 
 ### Application
 

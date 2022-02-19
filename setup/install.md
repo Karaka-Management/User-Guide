@@ -100,11 +100,11 @@ Before you can install the application you need to put the application files int
 
 ##### Windows
 
-By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Orange Management application into this directory.
+By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Karaka application into this directory.
 
 ##### Linux
 
-By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Orange Management application into this directory.
+By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Karaka application into this directory.
 
 #### Web Installer
 
@@ -188,7 +188,7 @@ Here you must define the admin login name, the admin password and email.
 
 ###### Top Level domain
 
-The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `orange-management.org`
+The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `karaka.app`
 
 ###### Web Subdirectory
 

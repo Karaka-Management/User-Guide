@@ -2,7 +2,7 @@
 
 Updates provide functionality improvements where patches provide security and bug fixes. It is always recommended to keep all application components up-to-date. The application either informs administrators about updates for installation or automatically installs them depending on the settings.
 
-Updates and patches are only concerned with the application and libraries it comes with, system and application updates such as OS, database etc. have to be updated by the system administrator. It is advised to only perform database updates once they are confirmed to work by Orange Management.
+Updates and patches are only concerned with the application and libraries it comes with, system and application updates such as OS, database etc. have to be updated by the system administrator. It is advised to only perform database updates once they are confirmed to work by Karaka.
 
 ## Security
 

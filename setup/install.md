@@ -66,6 +66,8 @@ Some modules in the application may need text recognition of scanned files (e.g.
 ###### Windows
 
 Download and install [tesseract](https://tesseract-ocr.github.io/tessdoc/Downloads.html).
+Download and install [pdftotext](https://www.xpdfreader.com/pdftotext-man.html).
+Download and install [pdftoppm](https://www.xpdfreader.com/pdftoppm-man.html).
 
 ###### Linux
 

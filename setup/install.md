@@ -32,9 +32,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 
 sudo apt-get install software-properties-common apache2 mysql-server
-```
 
-```sh
 sudo a2enmod rewrite
 sudo a2enmod headers
 ```

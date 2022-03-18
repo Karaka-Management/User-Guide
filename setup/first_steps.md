@@ -62,5 +62,3 @@ By default only admin users can create new accounts. However it is possible to a
 If a admin user creates a new account you must decide if the user/account should also be allowed to login/have a profile or if this account is just an internal account. 
 
 If the user should be allowed to login/active user you should click on `Create Profile` to also create a profile for the user. Upon doing this the user will receive a registration email in the same way as if he registered by himself. The registration email contains a preliminary password which the user should change.
-
-## 

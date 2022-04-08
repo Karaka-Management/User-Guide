@@ -45,7 +45,7 @@ When you assign the above mentioned permissions to a group you will see that you
 * The `Unit` this permission is for (after the installation you only have one unit but you maybe want to have additional units/sub-organizations later on)
 * The `App` this permission is for (after the installation you only have the `Backend` and the `Api` but in the future you may have additional apps, which sometimes even get provided by other modules e.g. `TicketApp`)
 * The `Module` this permission is for (e.g. the group only has create/write permissions for a certain module)
-* The `Type` is the module specific and can be found in the module help. This can be e.g. news-article in the News module, account in the Admin module etc.
+* The `Category` is  module specific and can be found in the module help. This can be e.g. news-article in the News module, account in the Admin module etc.
 * The `Element` is the specific model/element (e.g. a specific news article). This is represented by the element ID/number.
 * The `Component` is the specific component of a element/model (e.g. the title of a news article).
 
@@ -62,5 +62,3 @@ By default only admin users can create new accounts. However it is possible to a
 If a admin user creates a new account you must decide if the user/account should also be allowed to login/have a profile or if this account is just an internal account. 
 
 If the user should be allowed to login/active user you should click on `Create Profile` to also create a profile for the user. Upon doing this the user will receive a registration email in the same way as if he registered by himself. The registration email contains a preliminary password which the user should change.
-
-## 

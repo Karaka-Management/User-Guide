@@ -32,9 +32,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 
 sudo apt-get install software-properties-common apache2 mysql-server
-```
 
-```sh
 sudo a2enmod rewrite
 sudo a2enmod headers
 ```
@@ -66,6 +64,8 @@ Some modules in the application may need text recognition of scanned files (e.g.
 ###### Windows
 
 Download and install [tesseract](https://tesseract-ocr.github.io/tessdoc/Downloads.html).
+Download and install [pdftotext](https://www.xpdfreader.com/pdftotext-man.html).
+Download and install [pdftoppm](https://www.xpdfreader.com/pdftoppm-man.html).
 
 ###### Linux
 

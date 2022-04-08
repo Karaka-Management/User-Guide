@@ -39,7 +39,7 @@ These permissions can be assigned on multiple levels (descending in the followin
 * Unit/Organization
 * Application
 * Module
-* Type
+* Category
 * Element
 * Component
 
@@ -55,9 +55,9 @@ Every unit/organization can have multiple applications. One application could fo
 
 Different modules provide different features, by defining the modules permissions can be managed more granular. A sales person for example doesn't need access to R&D for example.
 
-### Type
+### Category
 
-Often a module provides multiple features or functionalities. The type can be used to give accounts even more specific permissions. In a organization an account may be allowed to create new invoices for customers but is not allowed to create a new customer.
+Often a module provides multiple features or functionalities. The category can be used to give accounts even more specific permissions. In a organization an account may be allowed to create new invoices for customers but is not allowed to create a new customer.
 
 ### Element
 

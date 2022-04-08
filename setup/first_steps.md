@@ -6,7 +6,7 @@ After your first login you will see that everything is rather empty. A good star
 
 The general application settings can be found in the Admin settings.
 
-Go to: 
+Go to:
 
 `Modules (on the side navigation) > Admin > Settings`
 
@@ -14,7 +14,7 @@ On this page you may change the general application settings such as login behav
 
 ### Modules
 
-Under `Modules` on the side navigation you can see all installed modules. By clicking on them you will get additional module information and module specific settings. 
+Under `Modules` on the side navigation you can see all installed modules. By clicking on them you will get additional module information and module specific settings.
 
 If you want to install additional settings search for specific keywords on the module page and you will receive suggestions based on these keywords. You can then check out the detailed information of these modules in order to further inspect the features the modules provides.
 
@@ -38,7 +38,7 @@ Groups (and accounts) can have the following permissions:
 * `DELETE`: The user can remove certain content
 * `PERM`: The user can change permissions
 
-It's also possible to assign permissions directly to individual users but this is **not** recommended as this makes managing permissions much more difficult. 
+It's also possible to assign permissions directly to individual users but this is **not** recommended as this makes managing permissions much more difficult.
 
 When you assign the above mentioned permissions to a group you will see that you can also define:
 
@@ -59,6 +59,6 @@ These restrictions show that it is possible to do very fine/granular permissions
 
 By default only admin users can create new accounts. However it is possible to allow users to register by themselves in the admin module settings. Self-registered users are always part of the `user` group. Make sure the `user` group permissions are designed while keeping that in mind.
 
-If a admin user creates a new account you must decide if the user/account should also be allowed to login/have a profile or if this account is just an internal account. 
+If a admin user creates a new account you must decide if the user/account should also be allowed to login/have a profile or if this account is just an internal account.
 
 If the user should be allowed to login/active user you should click on `Create Profile` to also create a profile for the user. Upon doing this the user will receive a registration email in the same way as if he registered by himself. The registration email contains a preliminary password which the user should change.

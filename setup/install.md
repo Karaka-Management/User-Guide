@@ -70,7 +70,7 @@ Download and install [pdftoppm](https://www.xpdfreader.com/pdftoppm-man.html).
 ##### Linux
 
 ```sh
-sudo apt-get install tesseract-ocr
+sudo apt-get install tesseract-ocr poppler-utils
 ```
 
 ### Optional

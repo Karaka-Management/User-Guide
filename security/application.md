@@ -18,7 +18,7 @@ is one of the business standards. Longer passwords may be required in the future
 
 ### Aging
 
-Passwords should be changed every 3 month. Enforced password changes are very common and prevent people from using the same passwords over a long period and potentially also for many other applications/services. More important this prevents people from using their standard password which they may use at home in a much less secure environment.
+Passwords should be changed every 12 months. Enforced password changes are very common and prevent people from using the same passwords over a long period and potentially also for many other applications/services. More important this prevents people from using their standard password which they may use at home in a much less secure environment.
 
 ## Permissions
 

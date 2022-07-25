@@ -29,6 +29,6 @@ There are still many more uncovered topics and tools which definitely are worth 
 * Iptables
 * Monitoring
 * fail2ban
-* UFW
+* Firewall (e.g. UFW)
 * Intrusion detection system
 * SFTP vs FTP

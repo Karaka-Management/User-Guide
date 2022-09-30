@@ -15,11 +15,11 @@ jobs:
       with:
         fetch-depth: 0
         submodules: recursive
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ secrets.GH_PAT }}
     - name: Lint Code Base
       uses: github/super-linter/slim@v4
       env:
         VALIDATE_ALL_CODEBASE: false
         VALIDATE_MARKDOWN: true
         DEFAULT_BRANCH: develop
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}

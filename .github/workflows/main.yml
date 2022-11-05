@@ -16,10 +16,18 @@ jobs:
         fetch-depth: 0
         submodules: recursive
         token: ${{ secrets.GH_PAT }}
+    - name: Checkout Build Repository
+      uses: actions/checkout@main
+      with:
+          fetch-depth: 1
+          ref: develop
+          repository: Karaka-Management/Build
+          path: Build
     - name: Lint Code Base
       uses: github/super-linter/slim@v4
       env:
         VALIDATE_ALL_CODEBASE: false
         VALIDATE_MARKDOWN: true
+        MARKDOWN_CONFIG_FILE: Build/Config/markdown.json
         DEFAULT_BRANCH: develop
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}

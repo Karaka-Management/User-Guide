@@ -23,11 +23,15 @@ jobs:
           ref: develop
           repository: Karaka-Management/Build
           path: Build
+    - name: Copy config file
+      run: |
+        mkdir .github/linters
+        cp Build/Config/markdown.json .github/linters/markdown.json
     - name: Lint Code Base
       uses: github/super-linter/slim@v4
       env:
         VALIDATE_ALL_CODEBASE: false
         VALIDATE_MARKDOWN: true
-        MARKDOWN_CONFIG_FILE: Build/Config/markdown.json
+        MARKDOWN_CONFIG_FILE: markdown.json
         DEFAULT_BRANCH: develop
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}

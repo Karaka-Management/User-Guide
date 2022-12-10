@@ -1,8 +1,8 @@
-## First Steps
+# First Steps
 
 After your first login you will see that everything is rather empty. A good starting point are the general application settings, groups and modules.
 
-### Application Settings
+## Application Settings
 
 The general application settings can be found in the Admin settings.
 
@@ -12,13 +12,13 @@ Go to:
 
 On this page you may change the general application settings such as login behavior, server localization, logging etc.
 
-### Modules
+## Modules
 
 Under `Modules` on the side navigation you can see all installed modules. By clicking on them you will get additional module information and module specific settings.
 
 If you want to install additional settings search for specific keywords on the module page and you will receive suggestions based on these keywords. You can then check out the detailed information of these modules in order to further inspect the features the modules provides.
 
-### Groups
+## Groups
 
 Groups are an easy solution to managing multiple users at the same time. After the installation only a handful of groups exist. Feel free to create additional groups based on your requirements.
 
@@ -28,7 +28,7 @@ Groups are an easy solution to managing multiple users at the same time. After t
 
 If a user is part of multiple groups (this is often the case in more complex permission handling) the user has the permissions of all groups he is part of. This allows to configure groups very carefully with only the necessary permissions.
 
-#### Permissions
+### Permissions
 
 Groups (and accounts) can have the following permissions:
 
@@ -55,7 +55,7 @@ These restrictions show that it is possible to do very fine/granular permissions
 * Only define module = Group/user has the permissions (e.g. read, create, ...) on everything in this module
 * Only unit and module is defined = Group/user had the permissions(e.g. read, create, ...) on everything in this module but only for the specified unit/sub-organization.
 
-### Accounts
+## Accounts
 
 By default only admin users can create new accounts. However it is possible to allow users to register by themselves in the admin module settings. Self-registered users are always part of the `user` group. Make sure the `user` group permissions are designed while keeping that in mind.
 

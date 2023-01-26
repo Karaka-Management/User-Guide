@@ -6,7 +6,7 @@ Updates and patches are only concerned with the application and libraries it com
 
 ## Security
 
-All updates and patches as signed by the provider to make sure that they cannot be tampered with. This way only authorized sources can provide updates and patches.
+All updates and patches are signed by the provider to make sure that they cannot be tampered with. This way only authorized sources can provide updates and patches.
 
 ## Automatic Updates
 

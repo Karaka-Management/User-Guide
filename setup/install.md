@@ -2,11 +2,11 @@
 
 The easiest and most common way to install the application is through the web installer. Alternatively you can also install it through a command line interface (cli).
 
-* [Server Recommendations](#server-recommendations)
-* [Webserver and Database](#web-server-and-database)
-* [Php](#php)
-* [Software](#software)
-* [Application Instllation](#application-installation)
+* Server Recommendations
+* Webserver and Database
+* Php
+* Software
+* Application Instllation
 
 ## Server Recommendations
 

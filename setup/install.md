@@ -12,12 +12,12 @@ The easiest and most common way to install the application is through the web in
 
 The server recommendations strongly depend on your individual needs, in the following you will find some general recommendations.
 
-| Type            | Minimum requirements                   | Recommendations                                              |
-| :--------------- | :------------------------------------- | :----------------------------------------------------------- |
-| Storage          | SSD 1 GB +space for documents     | SSD 5 GB +space for documents                           |
+| Type             | Minimum requirements                   | Recommendations                                                           |
+| :--------------- | :------------------------------------- | :------------------------------------------------------------------------ |
+| Storage          | SSD 1 GB +space for documents          | SSD 10 GB +space for documents                                            |
 | CPU              | i5 3.2 GHz / Xeon E3 3.8 GHz (4 cores) | Xeon Silver 2.40 GHz (10 cores) min. 4 cores dedicated to the application |
-| RAM              | 4GB DDR3 3000 MHz                      | 32 GB DDR4 3200                                              |
-| Operating System | Linux or Windows         | Linux                                                        |
+| RAM              | 4GB DDR3 3000 MHz                      | 32 GB DDR4 3200                                                           |
+| Operating System | Linux or Windows                       | Linux                                                                     |
 
 > The above mentioned recommendations are for the basic application use case without additional tools and software which you maybe want to install or have already running on the server. Furthermore, the amount of concurrent users also impacts which hardware requirements are necessary (above we calculated with 50 concurrent users)
 
@@ -56,7 +56,7 @@ On Windows php should already be installed with the web servers mentioned above 
 The following extensions are recommended and sometimes even mandatory:
 
 ```sh
-sudo apt-get install php8.1 php8.1-dev php8.1-cli php8.1-common php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-opcache php8.1-pdo php8.1-sqlite php8.1-mbstring php8.1-curl php8.1-imap php8.1-bcmath php8.1-zip php8.1-dom php8.1-xml php8.1-phar php8.1-gd php-pear
+sudo apt-get install php8.1 php8.1-dev php8.1-cli php8.1-common php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-opcache php8.1-pdo php8.1-sqlite php8.1-mbstring php8.1-curl php8.1-imap php8.1-bcmath php8.1-zip php8.1-dom php8.1-xml php8.1-phar php8.1-gd php-pear sqlite3
 ```
 
 ## Software

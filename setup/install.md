@@ -31,13 +31,13 @@ If you are on Windows you may want to download and install the newest version of
 
 ### Linux
 
-On linux you may want to install `apache2` and `mysql`. Please note you can also use this application with `nginx` and `postgres`:
+On linux you may want to install `apache2` and `mysql`/`mariadb`. Please note you can also use this application with `nginx` and `postgres`:
 
 ```sh
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 
-sudo apt-get install software-properties-common apache2 mysql-server
+sudo apt-get install software-properties-common apache2 mariadb-server mariadb-client
 
 sudo a2enmod rewrite
 sudo a2enmod headers
@@ -96,6 +96,18 @@ For caching you may install redis or memcached:
 ```sh
 sudo apt install redis-server
 sudo phpenmod redis
+```
+
+#### Html to Pdf (for Online Resource Watcher)
+
+##### Windows
+
+On windows you may want to download and install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+
+##### Linux
+
+```sh
+sudo apt-get install wkhtmltopdf
 ```
 
 ## Application Installation
@@ -162,11 +174,11 @@ The address for the database server usually is `127.0.0.1`
 
 ##### Type
 
-The database type depends on which database you used. If you followed this installation you probably used `mysql`
+The database type depends on which database you used. If you followed this installation you probably used `mysql` or `mariadb`
 
 ##### Port
 
-The port depends on the database you installed. Different database vendors use different ports. If you followed this installation you probably used mysql, in this case the port is `3306`. If you used another database, please check the documentation of that database to find the default port.
+The port depends on the database you installed. Different database vendors use different ports. If you followed this installation you probably used mysql or mariadb, in this case the port is `3306`. If you used another database, please check the documentation of that database to find the default port.
 
 ##### Database
 

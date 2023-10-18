@@ -1,6 +1,6 @@
 # Installation
 
-The easiest and most common way to install the application is through the web installer. Alternatively you can also install it through a command line interface (cli).
+The easiest and most common way to install the application is through the web installer located at https://127.0.0.1/Install if you put it into your apache2 directory. Alternatively you can also install it through a command line interface (cli).
 
 * Server Recommendations
 * Webserver and Database

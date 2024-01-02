@@ -98,6 +98,18 @@ sudo apt install redis-server
 sudo phpenmod redis
 ```
 
+#### Download tools
+
+##### Windows
+
+On windows you may want to download and install [wget](https://gnuwin32.sourceforge.net/packages/wget.htm)
+
+##### Linux
+
+```sh
+sudo apt-get install wget
+```
+
 #### Html to Pdf (for Online Resource Watcher)
 
 ##### Windows

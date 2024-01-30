@@ -122,6 +122,12 @@ On windows you may want to download and install [wkhtmltopdf](https://wkhtmltopd
 sudo apt-get install wkhtmltopdf
 ```
 
+#### Image analysis
+
+```sh
+sudo apt-get install imagemagick
+```
+
 ## Application Installation
 
 ### Files

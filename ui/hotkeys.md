@@ -10,6 +10,8 @@ The following hotkeys allow you to navigate the application.
 | Global            | Ctrl + Right Arrow | Jump to next UI element                             |
 | Global            | Ctrl + Left Arrow  | Jump to previous UI element                         |
 | Global            | Ctrl + B           | Go to previous page (back)                          |
+| Global            | Alt + Right Arrow  | Go to previous page (back)                          |
+| Global            | Alt + Left Arrow   | Go to nex page (only works after going back)        |
 | Link or Tab       | Enter              | Activate/execute/follow link                        |
 
 ## Form Interaction
@@ -27,4 +29,4 @@ The following hotkeys provide table interactions.
 | Element           | Hotkey             | Action                                              |
 | ----------------- | ------------------ | --------------------------------------------------- |
 | Table             | Ctrl + A           | Select all table elements                           |
-| Table             | Ctrl + E           | Export selected elements to excel                   |
+| Table             | Ctrl + E           | Export selected elements to excel (*coming soon*)   |

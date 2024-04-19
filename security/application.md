@@ -31,3 +31,21 @@ Updates are very important not only to implement the newest features but also to
 ## Modules, Extensions, Themes etc.
 
 Only download software components from the official website never trust any third party services. All software components on the official website get tested and reviewed internally in order to ensure no malicious behavior.
+
+## Which security features does the application implement?
+
+* We use Cross-Site Request Forgery tokens (`CSRF`) for API calls to prevent malicious executions through hidden third-party calls
+* We use a strict Content Security Policy (`CSP`) and `nonces` to prevent malicious code infiltration such as Cross-Site Scripting (`XSS`)
+* We use BCRYPT/Blowfish hashing with a randomly generated salt for user passwords
+* Some selected sensitive data is encrypted in the database and on the file system using the encryption library `libsodium`
+* We use backend validation on top of frontend validation
+* We almost never sanitize data, data is either valid or gets dismissed
+* We extensively test our source code
+* We escape user generated text data
+* Audit logs tracking changes in the database are first class citizens and are part of every installation by default
+* In addition to database audit logs we also generate error logs
+* Database query parameters are either simple datatypes (int, bool, float), use quotation for strings or use prepared statements
+* File paths are guarded to be within the application path
+* We mostly use soft deletes making it possible to restore most of the database data unless overwritten
+* We provide extensive user and group permission handling
+* Our default server configuration prevents the direct execution of any scripts aside from the main application

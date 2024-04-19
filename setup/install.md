@@ -41,11 +41,13 @@ sudo apt-get install software-properties-common apache2 mariadb-server mariadb-c
 
 sudo a2enmod rewrite
 sudo a2enmod headers
+
+sudo service apache2 restart
 ```
 
 ## Php
 
-The minimum php version requirement in the following installation guide is version 8.0.
+The minimum php version requirement in the following installation guide is version 8.2.
 
 ### Windows
 
@@ -57,6 +59,8 @@ The following extensions are recommended and sometimes even mandatory:
 
 ```sh
 sudo apt-get install php8.2 php8.2-dev php8.2-cli php8.2-common php8.2-mysql php8.2-pgsql php8.2-xdebug php8.2-opcache php8.2-pdo php8.2-sqlite php8.2-mbstring php8.2-curl php8.2-imap php8.2-bcmath php8.2-zip php8.2-dom php8.2-xml php8.2-phar php8.2-gd php-pear sqlite3
+
+sudo service apache2 restart
 ```
 
 ## Software
@@ -169,7 +173,7 @@ extension=mbstring.dll // Example in case you are installing on Windows
 extension=mbstring.so // Example in case you are installing on Linux
 ```
 
-> The `php.ini` file can be **often** found at C:/xampp/php/php.ini on Windows and /etc/php/8.0/apache2/php.ini on Linux.
+> The `php.ini` file can be **often** found at C:/xampp/php/php.ini on Windows and /etc/php/X.X/apache2/php.ini on Linux.
 >
 > Sometimes the ending .dll and .so must be omitted depending on the version and configuration of your php installation.
 
@@ -224,7 +228,7 @@ Here you must define the admin login name, the admin password and email.
 
 ##### Top Level domain
 
-The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `karaka.app`
+The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `jingga.app`
 
 ##### Web Subdirectory
 

@@ -138,6 +138,7 @@ sudo apt-get install imagemagick
 
 Before you can install the application you need to put the application files into the web server directory. This directory depends on the web server which you used and the web server configuration.
 
+
 #### Windows
 
 By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Karaka application into this directory.
@@ -146,23 +147,26 @@ By default the windows directory should be `C:/xampp/htdocs`. Remove all files i
 
 By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Karaka application into this directory.
 
+#### File permissions
+
+File permissions should only be an issue on linux. You can change the file permissions of directories as follows:
+
+```sh
+sudo chown -R www-data:www-data .
+sudo find . -type d -exec chmod 755 {} \;
+sudo find . -type f -exec chmod 644 {} \;
+sudo chmod 640 config.php
+```
+
 ### Web Installer
 
-If you installed the application on your local computer you can open a browser window and navigate to [http://127.0.0.1/Install](http://127.0.0.1/Install). If you installed it on a remote server navigate to the URL of that server.
+If you installed the application on your local computer you can open a browser window and navigate to [http://127.0.0.1/Install](http://127.0.0.1/Install). If you installed it on a remote server, navigate to the URL of that server.
 
 Click yourself through the installation and fill out the forms during the installation process.
 
 #### Pre-installation check
 
 On the page called pre-installation check the installation script will check and inform you if the necessary php extensions and file permissions are available. Only requirements marked as optional can be missing. If any other requirements fail please don't continue with the installation and fix these requirements first. Once you fixed the requirements reload the installation script!
-
-##### File permissions
-
-File permissions should only be an issue on linux. You can change the file permissions of directories as follows:
-
-```sh
-sudo chmod -R 755 /var/www/htm/Modules
-```
 
 ##### Php extensions
 
@@ -237,3 +241,11 @@ The web subdirectory by default is `/`. If you installed the application in a su
 #### Install
 
 After clicking install you will either receive a message that something went wrong e.g. some configurations are wrong (please fix them) or the installation will redirect you to the login if everything went smoothly. Please make sure to delete the `Install` directory so that no-one else can use it.
+
+### Cli Installer
+
+Navigate to the `Install` directory, modify the cli.php and config.php and then run the cli.php as www-data
+
+```sh
+sudo -u www-data php cli.php
+```

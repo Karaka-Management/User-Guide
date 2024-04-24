@@ -1,6 +1,6 @@
 # Installation
 
-The easiest and most common way to install the application is through the web installer located at https://127.0.0.1/Install if you put it into your apache2 directory. Alternatively you can also install it through a command line interface (cli).
+The easiest and most common way to install the application is through the web installer located at [https://127.0.0.1/Install](https://127.0.0.1/Install) if you put it into your apache2 directory. Alternatively you can also install it through a command line interface (cli).
 
 * [Server Recommendations]({%}#server-recommendations)
 * [Webserver and Database]({%}#web-server-and-database)
@@ -41,11 +41,13 @@ sudo apt-get install software-properties-common apache2 mariadb-server mariadb-c
 
 sudo a2enmod rewrite
 sudo a2enmod headers
+
+sudo service apache2 restart
 ```
 
 ## Php
 
-The minimum php version requirement in the following installation guide is version 8.0.
+The minimum php version requirement in the following installation guide is version 8.2.
 
 ### Windows
 
@@ -56,7 +58,9 @@ On Windows php should already be installed with the web servers mentioned above 
 The following extensions are recommended and sometimes even mandatory:
 
 ```sh
-sudo apt-get install php8.1 php8.1-dev php8.1-cli php8.1-common php8.1-mysql php8.1-pgsql php8.1-xdebug php8.1-opcache php8.1-pdo php8.1-sqlite php8.1-mbstring php8.1-curl php8.1-imap php8.1-bcmath php8.1-zip php8.1-dom php8.1-xml php8.1-phar php8.1-gd php-pear sqlite3
+sudo apt-get install php8.2 php8.2-dev php8.2-cli php8.2-common php8.2-mysql php8.2-pgsql php8.2-xdebug php8.2-opcache php8.2-pdo php8.2-sqlite php8.2-mbstring php8.2-curl php8.2-imap php8.2-bcmath php8.2-zip php8.2-dom php8.2-xml php8.2-phar php8.2-gd php-pear sqlite3
+
+sudo service apache2 restart
 ```
 
 ## Software
@@ -134,6 +138,7 @@ sudo apt-get install imagemagick
 
 Before you can install the application you need to put the application files into the web server directory. This directory depends on the web server which you used and the web server configuration.
 
+
 #### Windows
 
 By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Karaka application into this directory.
@@ -142,23 +147,26 @@ By default the windows directory should be `C:/xampp/htdocs`. Remove all files i
 
 By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Karaka application into this directory.
 
+#### File permissions
+
+File permissions should only be an issue on linux. You can change the file permissions of directories as follows:
+
+```sh
+sudo chown -R www-data:www-data .
+sudo find . -type d -exec chmod 755 {} \;
+sudo find . -type f -exec chmod 644 {} \;
+sudo chmod 640 config.php
+```
+
 ### Web Installer
 
-If you installed the application on your local computer you can open a browser window and navigate to [http://127.0.0.1/Install](http://127.0.0.1/Install). If you installed it on a remote server navigate to the URL of that server.
+If you installed the application on your local computer you can open a browser window and navigate to [http://127.0.0.1/Install](http://127.0.0.1/Install). If you installed it on a remote server, navigate to the URL of that server.
 
 Click yourself through the installation and fill out the forms during the installation process.
 
 #### Pre-installation check
 
 On the page called pre-installation check the installation script will check and inform you if the necessary php extensions and file permissions are available. Only requirements marked as optional can be missing. If any other requirements fail please don't continue with the installation and fix these requirements first. Once you fixed the requirements reload the installation script!
-
-##### File permissions
-
-File permissions should only be an issue on linux. You can change the file permissions of directories as follows:
-
-```sh
-sudo chmod -R 755 /var/www/htm/Modules
-```
 
 ##### Php extensions
 
@@ -169,14 +177,14 @@ extension=mbstring.dll // Example in case you are installing on Windows
 extension=mbstring.so // Example in case you are installing on Linux
 ```
 
-> The `php.ini` file can be **often** found at C:/xampp/php/php.ini on Windows and /etc/php/8.0/apache2/php.ini on Linux.
+> The `php.ini` file can be **often** found at C:/xampp/php/php.ini on Windows and /etc/php/X.X/apache2/php.ini on Linux.
 >
 > Sometimes the ending .dll and .so must be omitted depending on the version and configuration of your php installation.
 
 If the extension is not installed and not activated you can alternatively run the following commands on Linux (just as example):
 
 ```sh
-sudo apt-get install php8.1-mbstring
+sudo apt-get install php8.2-mbstring
 sudo phpenmod mbstring
 ```
 
@@ -224,7 +232,7 @@ Here you must define the admin login name, the admin password and email.
 
 ##### Top Level domain
 
-The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `karaka.app`
+The top level domain is the domain name where you installed the application. If you only installed it locally, it is 127.0.0.1. If you installed it on your web server, then you input the domain name e.g. `jingga.app`
 
 ##### Web Subdirectory
 
@@ -233,3 +241,11 @@ The web subdirectory by default is `/`. If you installed the application in a su
 #### Install
 
 After clicking install you will either receive a message that something went wrong e.g. some configurations are wrong (please fix them) or the installation will redirect you to the login if everything went smoothly. Please make sure to delete the `Install` directory so that no-one else can use it.
+
+### Cli Installer
+
+Navigate to the `Install` directory, modify the cli.php and config.php and then run the cli.php as www-data
+
+```sh
+sudo -u www-data php cli.php
+```

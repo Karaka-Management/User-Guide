@@ -1,6 +1,6 @@
 # Security Mentality
 
-Security layers and guidelines are usually seen by the every-day-user as necessary evil. However without a good mindset no amount of guidelines or even technical security measurements will protect the integrity of the server and data. The thought process often goes along these lines:
+Security layers and guidelines are usually seen by the every-day-user as necessary evil. However, without a good mindset no amount of guidelines or even technical security measurements will protect the integrity of the server and data. The thought process often goes along these lines:
 
 1. I will not get attacked!
 2. I don't have any data that need protection!

@@ -57,7 +57,7 @@ These restrictions show that it is possible to do very fine/granular permissions
 
 ## Accounts
 
-By default only admin users can create new accounts. However it is possible to allow users to register by themselves in the admin module settings. Self-registered users are always part of the `user` group. Make sure the `user` group permissions are designed while keeping that in mind.
+By default only admin users can create new accounts. However, it is possible to allow users to register by themselves in the admin module settings. Self-registered users are always part of the `user` group. Make sure the `user` group permissions are designed while keeping that in mind.
 
 If a admin user creates a new account you must decide if the user/account should also be allowed to login/have a profile or if this account is just an internal account.
 

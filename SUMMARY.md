@@ -2,7 +2,7 @@
 * [Introduction]({%}?page=README)
 
 ## Setup
-* [Install]({%}?page=setup/install)
+* [Installation]({%}?page=setup/install)
 * [First Steps]({%}?page=setup/first_steps)
 
 ## Administration
@@ -23,6 +23,7 @@
 
 ## User Interface (UI)
 
+* [General]({%}?page=ui/general)
 * [Hotkeys]({%}?page=ui/hotkeys)
-* [Tables]({%}?page=ui/tables)
-* [Search]({%}?page=ui/search)
+<!--* [Tables]({%}?page=ui/tables)
+* [Search]({%}?page=ui/search)-->

@@ -30,3 +30,13 @@ The following hotkeys provide table interactions.
 | ----------------- | ------------------ | --------------------------------------------------- |
 | Table             | Ctrl + A           | Select all table elements                           |
 | Table             | Ctrl + E           | Export selected elements to excel (*coming soon*)   |
+
+## Link Interaction
+
+The following hotkeys provide link interactions.
+
+| Element           | Hotkey             | Action                                              |
+| ----------------- | ------------------ | --------------------------------------------------- |
+| Preview/Close     | Ctrl + Hover       | Shows preview a preview of the hovered link*        |
+
+\* Only implemented for some links (e.g. images in media lists)

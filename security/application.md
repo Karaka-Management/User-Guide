@@ -49,3 +49,4 @@ Only download software components from the official website never trust any thir
 * We mostly use soft deletes making it possible to restore most of the database data unless overwritten
 * We provide extensive user and group permission handling
 * Our default server configuration prevents the direct execution of any scripts aside from the main application
+* We perform basic checks on user uploads

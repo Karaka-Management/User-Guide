@@ -32,3 +32,12 @@ There are still many more uncovered topics and tools which definitely are worth 
 * Firewall (e.g. UFW)
 * Intrusion detection system
 * SFTP vs FTP
+
+## Which security features do our servers implement?
+
+* We use fail2ban as intrusion prevention
+* We use UFW as firewall
+* We only allow access to the server through ssh login with keys + password and mandatory 2FA
+* We create backups for reconstruction
+* We use clamAV as virus scanner
+* Applications are restricted to their installation directory

@@ -58,7 +58,7 @@ On Windows php should already be installed with the web servers mentioned above 
 The following extensions are recommended and sometimes even mandatory:
 
 ```sh
-sudo apt-get install php8.2 php8.2-dev php8.2-cli php8.2-common php8.2-mysql php8.2-pgsql php8.2-xdebug php8.2-opcache php8.2-pdo php8.2-sqlite php8.2-mbstring php8.2-curl php8.2-imap php8.2-bcmath php8.2-zip php8.2-dom php8.2-xml php8.2-phar php8.2-gd php-pear sqlite3
+sudo apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-mysql php8.3-pgsql php8.3-xdebug php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear sqlite3
 
 sudo service apache2 restart
 ```
@@ -184,7 +184,7 @@ extension=mbstring.so // Example in case you are installing on Linux
 If the extension is not installed and not activated you can alternatively run the following commands on Linux (just as example):
 
 ```sh
-sudo apt-get install php8.2-mbstring
+sudo apt-get install php8.3-mbstring
 sudo phpenmod mbstring
 ```
 

@@ -21,6 +21,105 @@ The server recommendations strongly depend on your individual needs, in the foll
 
 > The above mentioned recommendations are for the basic application use case without additional tools and software which you maybe want to install or have already running on the server. Furthermore, the amount of concurrent users also impacts which hardware requirements are necessary (above we calculated with 50 concurrent users)
 
+## Quick Installation Guide
+
+The following commands give an overview of how to setup your server for the application. Some of the steps may not be necessary or require changes depending on your server environment.
+
+```sh
+add-apt-repository ppa:ondrej/php
+apt-get update
+apt-get upgrade
+apt-get install snap software-properties-common
+
+apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-intl php8.3-mysql php8.3-pgsql php8.3-xdebug php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear apache2 libapache2-mpm-itk apache2-utils mariadb-server mariadb-client wkhtmltopdf tesseract-ocr poppler-utils imagemagick redis-server wget
+
+phpenmod redis
+phpenmod mbstring
+
+mkdir -p /var/cache/apache2
+chown -R www-data:www-data /var/cache/apache2
+
+systemctl enable apache2
+a2enmod rewrite
+a2enmod expires
+a2enmod headers
+a2enmod cache
+a2enmod cache_disk
+a2enmod mpm_itk
+systemctl restart apache2
+systemctl start apache-htcacheclean
+
+mysql_secure_installation
+
+# IMPORTANT: Update my.cnf file with log_bin_trust_function_creators = 1
+
+systemctl start mariadb
+systemctl enable mariadb
+
+mysql -u root -p
+CREATE USER 'YOUR_DB_USERNAME'@'%' IDENTIFIED BY 'YOUR_DB_PASSWORD';
+CREATE DATABASE oms';
+GRANT ALL PRIVILEGES ON oms.* TO 'YOUR_DB_USERNAME'@'%';
+
+cat << EOF > /etc/apache2/sites-available/000-jingga.conf
+<VirtualHost *:80>
+    ServerAdmin your_admin@email.com
+    DocumentRoot /var/www/html/jingga
+    ServerName your_server.com
+
+    SetEnv OMS_STRIPE_SECRET 0
+    SetEnv OMS_STRIPE_PUBLIC 0
+    SetEnv OMS_STRIPE_WEBHOOK 0
+    SetEnv OMS_PRIVATE_KEY_I 0
+
+    <Directory /var/www/html/jingga>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    <IfModule mpm_itk_module>
+        AssignUserId www-jingga www-data
+    </IfModule>
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+EOF
+
+useradd www-jingga
+usermod -a -G www-data www-jingga
+usermod -d /var/jingga www-jingga
+mkdir -p /var/jingga
+chown www-jingga:www-data /var/jingga
+
+sudo -u www-jingga mkdir /var/www/html/jingga
+chown -R www-data:www-data /var/www
+
+a2ensite 000-jingga.conf
+
+# You may have to install a ssl certification
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
+certbot --apache
+certbot renew --dry-run
+
+systemctl reload apache2
+systemctl restart apache2
+```
+
+* The commands above do the following:
+    * Install the necessary software (incl. a web server and database)
+    * Setup the web server and database:
+        * Creates a new website configuration
+        * Creates a database user
+        * Creates a database
+        * Creates a new user for the web server
+        * Setup ssl certificate (for https)
+* Now you can put the application data into the `/var/www/html/jingga` directory
+* Visit the application in your browser `your_ip/Install`
+* Follow the installation steps in your browser
+
 ## Web server and Database
 
 If you don't have a web server already installed please install the web server of your choice. Web servers which are supported are apache2 and nginx. Databases which are supported are mysql/mariadb, postgres and mssql/sqlsrv.

@@ -240,11 +240,11 @@ Before you can install the application you need to put the application files int
 
 #### Windows
 
-By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Karaka application into this directory.
+By default the windows directory should be `C:/xampp/htdocs`. Remove all files in this directory and put all the files of the Jingga application into this directory.
 
 #### Linux
 
-By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Karaka application into this directory.
+By default the linux directory should be `/var/www/htm`. Remove all files in this directory and put all the files of the Jingga application into this directory.
 
 #### File permissions
 

@@ -3,6 +3,7 @@
 The easiest and most common way to install the application is through the web installer located at [https://127.0.0.1/Install](https://127.0.0.1/Install) if you put it into your apache2 directory. Alternatively you can also install it through a command line interface (cli).
 
 * [Server Recommendations]({%}#server-recommendations)
+* [Quick Installation Guide]({%}#quick-installation-guide)
 * [Webserver and Database]({%}#web-server-and-database)
 * [Php]({%}#php)
 * [Software]({%}#software)
@@ -31,7 +32,7 @@ apt-get update
 apt-get upgrade
 apt-get install snap software-properties-common
 
-apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-intl php8.3-mysql php8.3-pgsql php8.3-xdebug php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear apache2 libapache2-mpm-itk apache2-utils mariadb-server mariadb-client wkhtmltopdf tesseract-ocr poppler-utils imagemagick redis-server wget
+apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-intl php8.3-mysql php8.3-pgsql php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear apache2 libapache2-mpm-itk apache2-utils mariadb-server mariadb-client xvfb libfontconfig wkhtmltopdf tesseract-ocr poppler-utils imagemagick redis-server wget
 
 phpenmod redis
 phpenmod mbstring
@@ -157,7 +158,7 @@ On Windows php should already be installed with the web servers mentioned above 
 The following extensions are recommended and sometimes even mandatory:
 
 ```sh
-sudo apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-mysql php8.3-pgsql php8.3-xdebug php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear sqlite3
+sudo apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-mysql php8.3-pgsql php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear sqlite3
 
 sudo service apache2 restart
 ```
@@ -222,7 +223,7 @@ On windows you may want to download and install [wkhtmltopdf](https://wkhtmltopd
 ##### Linux
 
 ```sh
-sudo apt-get install wkhtmltopdf
+sudo apt-get install xvfb libfontconfig wkhtmltopdf
 ```
 
 #### Image analysis

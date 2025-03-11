@@ -53,6 +53,7 @@ systemctl start apache-htcacheclean
 mysql_secure_installation
 
 # IMPORTANT: Update my.cnf file with log_bin_trust_function_creators = 1
+# After restarting mysql you can check if it is enabled with SHOW VARIABLES LIKE 'log_bin_trust_function_creators';
 
 systemctl start mariadb
 systemctl enable mariadb

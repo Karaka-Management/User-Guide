@@ -62,6 +62,7 @@ mysql -u root -p
 CREATE USER 'YOUR_DB_USERNAME'@'%' IDENTIFIED BY 'YOUR_DB_PASSWORD';
 CREATE DATABASE oms';
 GRANT ALL PRIVILEGES ON oms.* TO 'YOUR_DB_USERNAME'@'%';
+FLUSH PRIVILEGES;
 
 cat << EOF > /etc/apache2/sites-available/000-jingga.conf
 <VirtualHost *:80>

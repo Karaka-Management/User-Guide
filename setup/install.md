@@ -32,7 +32,7 @@ apt-get update
 apt-get upgrade
 apt-get install snap software-properties-common
 
-apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-intl php8.3-mysql php8.3-pgsql php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear apache2 libapache2-mpm-itk apache2-utils mariadb-server mariadb-client xvfb libfontconfig wkhtmltopdf tesseract-ocr poppler-utils imagemagick redis-server wget
+apt-get install php8.3 php8.3-dev php8.3-cli php8.3-common php8.3-intl php8.3-mysql php8.3-pgsql php8.3-opcache php8.3-pdo php8.3-sqlite php8.3-mbstring php8.3-curl php8.3-imap php8.3-bcmath php8.3-zip php8.3-dom php8.3-xml php8.3-phar php8.3-gd php-pear apache2 libapache2-mpm-itk apache2-utils libapache2-mod-php8.3 mariadb-server mariadb-client xvfb libfontconfig wkhtmltopdf tesseract-ocr poppler-utils imagemagick redis-server wget
 
 phpenmod redis
 phpenmod mbstring
@@ -62,7 +62,6 @@ mysql -u root -p
 CREATE USER 'YOUR_DB_USERNAME'@'%' IDENTIFIED BY 'YOUR_DB_PASSWORD';
 CREATE DATABASE oms';
 GRANT ALL PRIVILEGES ON oms.* TO 'YOUR_DB_USERNAME'@'%';
-FLUSH PRIVILEGES;
 
 cat << EOF > /etc/apache2/sites-available/000-jingga.conf
 <VirtualHost *:80>
